@@ -1,0 +1,48 @@
+@font-face {
+    font-family: pacman;
+    src: url("../fonts/pacman-font.ttf");
+}
+
+body, html {
+    font-family: "pacman";
+    background-color: black;
+    text-align: center;
+    margin: 0 2.5vw;
+    padding: 0;
+    display: table;
+}
+
+h1 {
+    color: rgb(251,245,85);
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(232, 224, 9);
+}
+
+.button {
+    width: calc(50% - 2.5vw);
+    float: left;
+    background-color: rgb(38,66,198);
+    padding: 30vh 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(53, 82, 221);
+    cursor: pointer;
+}
+
+#controller {
+    float: right;
+}
+
+#main {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+}

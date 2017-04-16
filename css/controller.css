@@ -1,0 +1,83 @@
+@font-face {
+    font-family: pacman;
+    src: url("../fonts/pacman-font.ttf");
+}
+
+
+body, html {
+    overflow: hidden;
+    background-color: black;
+    font-family: "pacman";
+    color: black;
+}
+
+.button:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    width: 20vh;
+    height: 20vh;
+    position: fixed;
+    font-size: 4em;
+    text-align: center;
+    transition: background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+#up {
+    margin-left: calc((100vw - 20vh) / 2);
+    margin-top: 20vh;
+}
+
+#down {
+    margin-left: calc((100vw - 20vh) / 2);
+    margin-top: 60vh;
+}
+
+#left {
+    margin-left: calc(((100vw - 20vh) / 2) - 20vh);
+    margin-top: 40vh;
+}
+
+#right {
+    margin-left: calc(((100vw - 20vh) / 2) + 20vh);
+    margin-top: 40vh;
+}
+
+#powerup {
+    background-color: black;
+    color: white;
+    margin-left: calc((100vw - 20vh) / 2);
+    margin-top: 40vh;
+    font-size: 6em;
+}
+
+#powerup:hover {
+    color: #efefef;
+    background-color: #ff4949;
+}
+
+.button:hover {
+    background-color: #efefef;
+    color: #303030;
+    cursor: pointer;
+}
+
+#score {
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    padding: 30px;
+    font-size: 2em;
+}
+
+#score-count {
+    font-family: "Trebuchet MS";
+    font-size: 3em;
+    margin: 0;
+}

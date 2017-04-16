@@ -1,0 +1,94 @@
+@font-face {
+    font-family: pacman;
+    src: url("../fonts/pacman-font.ttf");
+}
+
+body, html {
+    background: black;
+    margin: 0;
+    padding: 20px;
+    font-family: "pacman";
+    overflow: hidden;
+}
+
+#game {
+    width: calc(100vw - 80px);
+    height: calc(100vh - 80px);
+    border: 1px solid white;
+}
+
+#gamecanvas {
+    width: 100%;
+    height: 100%;
+}
+
+#waiting {
+    color: rgb(251,245,85);
+    text-align: center;
+    width: 100%;
+    margin-top: 20vh;
+    font-size: 2em;
+}
+
+#waiting h1 {
+    font-size: 3.5em;
+}
+
+#countdown {
+    color: rgb(251,245,85);
+    text-align: center;
+    width: 100%;
+    margin-top: 30vh;
+    font-size: 2em;
+}
+
+#countdown-timer {
+    color: #FF4B3E;
+    font-family: "Trebuchet MS";
+    font-size: 5em;
+    margin: 0;
+}
+
+#start {
+    background-color: #F4AC32;
+    color: black;
+    padding: 30px 50px;
+    font-size: 1em;
+    display: inline-block;
+    transition: background-color 0.2s ease-in;
+}
+
+#start:hover {
+    cursor: pointer;
+    background-color: #F5B82E;
+}
+
+#postgame {
+    color: rgb(251,245,85);
+    text-align: center;
+    width: 100%;
+    margin-top: 15vh;
+    font-size: 2em;
+}
+
+#winner {
+    font-size: 3em;
+}
+
+#confetti {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/**** colors ****
+ * border color: rgb(38,66,198)
+ * pacman: rgb(251,245,85)
+ * ghost red: #f31327
+ * ghost orange: #fd9a34
+ * ghost pink: #ffadc7
+ * ghost cyan: #24e0c0
+ * orb: rgb(222, 165, 188)
+****************/
